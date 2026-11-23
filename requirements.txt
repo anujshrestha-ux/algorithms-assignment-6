@@ -1,0 +1,4 @@
+# Only needed by benchmark_selection.py and benchmark_structures.py (plots, curve fitting).
+# selection.py, data_structures.py and the tests use the standard library only.
+matplotlib>=3.5
+numpy>=1.21

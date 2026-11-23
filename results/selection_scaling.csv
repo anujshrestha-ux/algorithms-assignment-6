@@ -1,0 +1,16 @@
+distribution,algorithm,loglog_slope
+random,deterministic (median of medians),1.069
+random,randomized (quickselect),1.033
+random,sort + index (baseline),1.14
+sorted,deterministic (median of medians),1.065
+sorted,randomized (quickselect),1.088
+sorted,sort + index (baseline),0.947
+reverse_sorted,deterministic (median of medians),1.055
+reverse_sorted,randomized (quickselect),1.133
+reverse_sorted,sort + index (baseline),0.975
+few_unique,deterministic (median of medians),1.043
+few_unique,randomized (quickselect),1.019
+few_unique,sort + index (baseline),0.946
+all_equal,deterministic (median of medians),0.921
+all_equal,randomized (quickselect),0.934
+all_equal,sort + index (baseline),0.74

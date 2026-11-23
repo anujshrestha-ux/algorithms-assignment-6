@@ -1,0 +1,16 @@
+k_label,k,n,algorithm,median_seconds
+k=1 (min),1,100000,deterministic (median of medians),0.0967479000100866
+k=1 (min),1,100000,randomized (quickselect),0.017188500001793727
+k=1 (min),1,100000,sort + index (baseline),0.016493700008140877
+k=n/4,25000,100000,deterministic (median of medians),0.08700880000833422
+k=n/4,25000,100000,randomized (quickselect),0.019122800003970042
+k=n/4,25000,100000,sort + index (baseline),0.012857900001108646
+k=n/2 (median),50000,100000,deterministic (median of medians),0.0819727000198327
+k=n/2 (median),50000,100000,randomized (quickselect),0.025079900020500645
+k=n/2 (median),50000,100000,sort + index (baseline),0.01709310000296682
+k=3n/4,75000,100000,deterministic (median of medians),0.08908820000942796
+k=3n/4,75000,100000,randomized (quickselect),0.0327050999912899
+k=3n/4,75000,100000,sort + index (baseline),0.013278600003104657
+k=n (max),100000,100000,deterministic (median of medians),0.08619599998928607
+k=n (max),100000,100000,randomized (quickselect),0.013264700013678521
+k=n (max),100000,100000,sort + index (baseline),0.011881200014613569
