@@ -33,7 +33,7 @@ python -m pip install -r requirements.txt
 
 ## How to run
 
-Run everything from the repository root.
+Run everything from the repository root. On Windows, use `py` in place of `python` if the `python` command is not recognized.
 
 ```bash
 # 1. Unit tests (41 tests, under a second)
@@ -85,6 +85,20 @@ ll = SinglyLinkedList([1, 2, 3]); ll.insert_front(0); list(ll)    # -> [0, 1, 2,
 * Array stacks/queues (amortized O(1)) and linked stacks/queues (worst-case O(1)) perform the same within noise, about 0.1-0.2 µs per operation in CPython.
 * Where complexities differ, the measurements agree with theory: inserting at the front costs Θ(n²) in total for the array but is linear for the list; indexing is O(1) for the array (0.12 µs) but grows with n for the list (5.9 µs to 52.2 µs for n from 1,000 to 8,000); removing the last element is O(1) for the array but O(n) for a singly linked list.
 * A linked-list node uses about 6x the memory of an array slot (48 bytes vs 8.1 bytes in CPython, excluding the stored objects).
+
+## Figures
+
+Runtime of the two selection algorithms (and a sort-then-index baseline) as the input size grows, for five input types:
+
+![Selection runtime vs n](results/selection_runtime.png)
+
+The same data as time per element: a flat line means linear time.
+
+![Selection time per element](results/selection_per_element.png)
+
+Array-based vs linked-list-based structures:
+
+![Array vs linked structures](results/structure_comparison.png)
 
 ## Results files
 
